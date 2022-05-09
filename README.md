@@ -1,5 +1,5 @@
 # HeaderBytesRemover
-This app can remove the header bytes or the bytes at the start that can prevent certain files from being accessed properly .
+An C# app that can remove the header bytes or the bytes at the start of a file.
 
 Place the file next to the app and type the filename of the file with the extension in the infile_name.txt file.
 <br>For Example:
