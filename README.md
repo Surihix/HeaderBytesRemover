@@ -6,7 +6,7 @@ Place the file next to the app and type the filename of the file with the extens
 <br>```myfile.sok```
 
 
-<br>Type the byte number from where they want the actual file data of the file specified in the converted output file. 
+<br>Type the byte number from where you want the data of the file to be copied from. 
 the byte number has to be in ```int``` and entered in the "byte_position.txt" file.
 <br>For Example:
 <br>```16```
