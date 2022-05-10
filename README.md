@@ -1,5 +1,5 @@
 # HeaderBytesRemover
-This app can remove the header bytes or the bytes at the start of a file that can prevent certain files from being accessed properly.
+This app can remove the header bytes or the bytes at the start of a file that can prevent the file from being accessed properly.
 
 Place the file that you want the bytes removed, next to the app and type the filename of the file with the extension in the infile_name.txt file.
 <br>For Example:
