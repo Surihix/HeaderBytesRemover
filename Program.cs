@@ -14,7 +14,7 @@ namespace HeaderBytesRemover
                   using (Stream InFile = new FileStream(Console.ReadLine(), FileMode.Open, FileAccess.Read))
                      {
 
-                        Console.WriteLine("\nInput the byte position: ");
+                        Console.WriteLine("\nEnter the byte position in integers: ");
 
                         if (int.TryParse(Console.ReadLine(), out int bytenumber))
                         {
