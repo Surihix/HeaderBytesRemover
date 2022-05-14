@@ -5,7 +5,8 @@ Ever came across a file with weird Header data after which there is another head
 This app can remove such header bytes or the bytes at the start of a file by letting you specify the exact byte position from where you want to copy the bytes from the file into a new file. 
 
 This is quite helpful when you have such header bytes that can prevent the file from being accessed properly due to the presence of the header and so removing that can inturn make the file properly accessible.
-
+<br>
+<br>
 ## Instruction [applies to current v1.2]
 Place the file that want the bytes removed, next to the app and then run the app. then enter the filename with the extension on the console.
 <br>For Example:
@@ -22,8 +23,6 @@ Place the file that want the bytes removed, next to the app and then run the app
 <br>```myfile.wav```
 
 <br>Press Enter and the app will then create a new file with the header bytes removed along with the extension and the filename that you specified on the console.
-
-
 
 <br>
 <br>
