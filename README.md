@@ -1,6 +1,6 @@
 # HeaderBytesRemover
 
-Ever came across a file with weird Header data after which there is another header which is the actual one that the file uses ? 
+Ever came across a file with weird Header data after which there is another header which is the actual one that the file uses.
 
 This app can remove such header bytes or the bytes at the start of a file by letting you specify the exact byte position from where you want to copy the bytes from the file into a new file. 
 
