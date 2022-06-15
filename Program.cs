@@ -18,7 +18,7 @@ namespace HeaderBytesRemover
 
                         if (int.TryParse(Console.ReadLine(), out int bytenumber))
                         {
-                            // Seek to the byte specified in the byte_position.txt file 
+                            // Seek to the byte value that the user has entered on the console 
                             InFile.Seek(bytenumber, SeekOrigin.Begin);
 
                             Console.WriteLine("\nEnter your output filename with extension: ");
