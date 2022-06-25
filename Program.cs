@@ -7,41 +7,41 @@ namespace HeaderBytesRemover
     {
         static void Main(string[] args)
         {
+            
+            // Check the number of arguements specified by the user 
+            // and if its less than 3, then terminate the program
+            if (args.Length != 3)
+            {
+               return;
+            }
 
-                  Console.WriteLine("Enter your input filename with extension:");
+            // Storing the values specified in each of the arguements as variables
+            string input_file_arg = args[0];
+            long byte_pos = Convert.ToInt64(args[1]);
+            string output_file_arg = args[2];
 
-                  // Open the file that the user has entered on the console in a filestream
-                  using (Stream InFile = new FileStream(Console.ReadLine(), FileMode.Open, FileAccess.Read))
-                     {
 
-                        Console.WriteLine("\nEnter the byte position in integers: ");
+            // Open the input file specified in arg[0] in a filestream
+            using (Stream InFile = new FileStream(input_file_arg, FileMode.Open, FileAccess.Read))
+            {
 
-                        if (int.TryParse(Console.ReadLine(), out int bytenumber))
-                        {
-                            // Seek to the byte specified in the byte_position.txt file 
-                            InFile.Seek(bytenumber, SeekOrigin.Begin);
+               // Seek to the byte value specified in arg[1]
+               InFile.Seek(byte_pos, SeekOrigin.Begin);
 
-                            Console.WriteLine("\nEnter your output filename with extension: ");
+               // Create the output file specified in arg[2] in a filestream
+               FileStream OutFile = new FileStream(output_file_arg, FileMode.CreateNew);
 
-                            // Create the file that the user has entered on the console in a filestream
-                            FileStream HeaderstrippedOutFile = new FileStream(Console.ReadLine(), FileMode.CreateNew);
-
-                            Console.WriteLine("\nRemoving header bytes....");
+               Console.WriteLine("\nRemoving header bytes....");
                             
-                            // Copy the bytes to the output file filestream  
-                            _ = new MemoryStream();
-                            InFile.CopyTo(HeaderstrippedOutFile);
+               // Copy the bytes to the output file filestream  
+               _ = new MemoryStream();
+               InFile.CopyTo(OutFile);
                                                              
+            }
 
-                        }
-
-                  }
+        }                        
         
-                
-        
-        }
+    }
     
-    }    
-
-}
+}    
 
