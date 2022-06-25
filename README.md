@@ -7,6 +7,20 @@ This app can remove such header bytes or the bytes at the start of a file by let
 This is quite helpful when you have such header bytes that can prevent the file from being accessed properly due to the presence of the header and so removing that can in turn make the file properly accessible.
 <br>
 <br>
+## Instructions [for v1.3]
+Place the file that want the bytes removed, next to the app and then open the app through Command Prompt with the following commandline arguements:
+<br> ```HeaderBytesRemover [file.extension] [byte-number] [outputfile.extension]```
+<br>
+<br>For Example:
+<br> ``` HeaderBytesRemover myfile.sok 16 myfile.wav ```
+<br>
+<br>The argument would contain this app name, the filename with the extension, the byte position number which should be in integers, and the output file name with the extension.  
+
+<br>
+<br>
+<br>
+<br>
+
 ## Instructions [for v1.2]
 Place the file that want the bytes removed, next to the app and then run the app. then enter the filename with the extension on the console.
 <br>For Example:
