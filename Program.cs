@@ -20,10 +20,10 @@ namespace HeaderBytesRemover
             long byte_pos = Convert.ToInt64(args[1]);
             string output_file_arg = args[2];
 
-
-            // Open the input file specified in arg[0] in a filestream
-            using (Stream InFile = new FileStream(input_file_arg, FileMode.Open, FileAccess.Read))
-            {
+                        if (int.TryParse(Console.ReadLine(), out int bytenumber))
+                        {
+                            // Seek to the byte specified in the byte_position.txt file 
+                            InFile.Seek(bytenumber, SeekOrigin.Begin);
 
                // Seek to the byte value specified in arg[1]
                InFile.Seek(byte_pos, SeekOrigin.Begin);
