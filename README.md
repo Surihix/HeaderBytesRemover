@@ -7,7 +7,7 @@ This app can remove such header bytes or the bytes at the start of a file by let
 This is quite helpful when you have such header bytes that can prevent the file from being accessed properly due to the presence of the header and so removing that can in turn make the file properly accessible.
 <br>
 <br>
-## Instructions [applies to current v1.2]
+## Instructions [for v1.2]
 Place the file that want the bytes removed, next to the app and then run the app. then enter the filename with the extension on the console.
 <br>For Example:
 <br>```myfile.sok```
@@ -29,7 +29,7 @@ Place the file that want the bytes removed, next to the app and then run the app
 <br>
 <br>
 
-## Instructions [applies to older v1.0 and v1.1] 
+## Instructions [for v1.0 and v1.1] 
 Place the file that you want the bytes removed, next to the app and type the filename of the file with the extension in the infile_name.txt file.
 <br>For Example:
 <br>```myfile.sok```
