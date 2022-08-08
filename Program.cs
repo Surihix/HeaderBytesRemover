@@ -33,10 +33,12 @@ namespace HeaderBytesRemover
 
                 Console.WriteLine("\nRemoving header bytes....");
 
-                // Copy the bytes to the output file filestream  
+                // Copy the bytes to the output file filestream and
+                // close the InFile FileStream 
                 _ = new MemoryStream();
-                InFile.CopyTo(OutFile);
-
+                InFile.CopyTo(OutFile);               
+                InFile.Close();              
+                
             }
 
         }
